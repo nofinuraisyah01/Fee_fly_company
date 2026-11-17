@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8f3ec">
+  <title>Fee Fly Company</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="navbar" aria-label="Navigasi utama">
+    <a href="#beranda" class="logo"><strong>FEE FLY</strong><span>COMPANY</span></a>
+
+    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+    <label for="menu-toggle" class="menu-icon" aria-label="Buka atau tutup menu">
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-xmark"></i>
+    </label>
+
+    <ul class="nav-links">
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#daftar">Koleksi</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+      <li><a href="#lokasi">Lokasi</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="beranda" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <span class="eyebrow light">WELCOME TO FEE FLY COMPANY</span>
+      <h1>Temukan Gaya,<br><em>Tunjukkan Dirimu.</em></h1>
+      <p>Jelajahi pilihan fashion yang melengkapi setiap momen dan karakter.</p>
+      <a href="#daftar" class="primary-button">Jelajahi Koleksi <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    <span class="hero-note">STYLE THAT SPEAKS FOR YOU</span>
+  </section>
+
+  <section class="benefits section-pad">
+    <div class="section-heading">
+      <h2>Lebih dari Sekadar Gaya</h2>
+      <p>Kami ingin setiap pilihan terasa nyaman, berkesan, dan sesuai dengan gayamu.</p>
+    </div>
+    <div class="benefit-grid">
+      <article class="benefit-card">
+        <span class="benefit-icon"><i class="fa-solid fa-gem"></i></span>
+        <h3>Kualitas Terjaga</h3>
+        <p>Mengutamakan pilihan produk dan detail yang menunjang penampilan.</p>
+      </article>
+      <article class="benefit-card">
+        <span class="benefit-icon"><i class="fa-solid fa-shirt"></i></span>
+        <h3>Gaya Beragam</h3>
+        <p>Beragam kategori untuk menemani kebutuhan gaya di berbagai kesempatan.</p>
+      </article>
+      <article class="benefit-card">
+        <span class="benefit-icon"><i class="fa-solid fa-handshake"></i></span>
+        <h3>Peluang Kemitraan</h3>
+        <p>Membuka kesempatan bagi siapa saja yang ingin tumbuh dan berkembang bersama.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="tentang" class="about-section section-pad">
+    <div class="about-wrap">
+      <div class="about-copy">
+        <h2>Cerita di Balik<br><em>Fee Fly Company</em></h2>
+        <p>Fee Fly Company merupakan brand yang telah hadir dan berkembang sejak tahun 2025. Usaha ini didirikan oleh Nofi Nur Aisyah dengan perjalanan yang penuh perjuangan dan semangat untuk terus berkembang.</p>
+        <p>Nama "Fee Fly" sendiri diambil dari gabungan Bahasa Prancis dan Inggris yang berarti Peri Terbang</p>
+      </div>
+      <!-- <div class="story-list">
+        <article class="story-item"><span>01</span><div><h3>2014</h3><p>Awal perjalanan Fee Fly Company.</p></div></article>
+        <article class="story-item"><span>02</span><div><h3>Passion & Dedication</h3><p>Dibangun dengan kerja keras dan ketekunan.</p></div></article>
+        <article class="story-item"><span>03</span><div><h3>Growing Together</h3><p>Terus berkembang dan membuka peluang usaha.</p></div></article>
+      </div> -->
+    </div>
+  </section>
+
+  <section id="daftar" class="collection section-pad">
+    <div class="section-heading">
+      <span class="eyebrow">OUR COLLECTION</span>
+      <h2>Pilih Gaya Favoritmu</h2>
+      <p>Gunakan kategori di bawah untuk melihat koleksi yang ingin kamu jelajahi.</p>
+    </div>
+
+    <!-- Filter CSS-only: pilih satu kategori untuk menampilkan kartunya -->
+    <div class="catalogue">
+      <input type="radio" name="category" id="filter-all" checked>
+      <input type="radio" name="category" id="filter-formal">
+      <input type="radio" name="category" id="filter-casual">
+      <input type="radio" name="category" id="filter-vintage">
+      <input type="radio" name="category" id="filter-jewelry">
+
+      <div class="filter-tabs" aria-label="Filter koleksi">
+        <label for="filter-all">Semua</label>
+        <label for="filter-formal">Formal</label>
+        <label for="filter-casual">Casual</label>
+        <label for="filter-vintage">Vintage</label>
+        <label for="filter-jewelry">Jewelry</label>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card formal">
+          <a class="product-photo" href="#detail-formal"><img src="fashion formal.jpg" alt="Fashion formal"><span>01 / FORMAL</span></a>
+          <div class="product-info"><span class="product-category">FORMAL</span><h3>Fashion Formal</h3><p>Gaya rapi untuk momen yang lebih istimewa.</p><div class="product-bottom"><strong>Rp 200,000-1,000,000</strong><a href="#detail-formal">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+        </article>
+
+        <article class="product-card casual">
+          <a class="product-photo" href="#detail-casual"><img src="fashion casual.jpg" alt="Fashion casual"><span>02 / CASUAL</span></a>
+          <div class="product-info"><span class="product-category">CASUAL</span><h3>Fashion Casual</h3><p>Simple dan santai untuk gaya sehari-hari.</p><div class="product-bottom"><strong>Rp 200,000-3,000,000</strong><a href="#detail-casual">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+        </article>
+
+        <article class="product-card vintage">
+          <a class="product-photo" href="#detail-vintage"><img src="fashion vintage.jpg" alt="Fashion vintage"><span>03 / VINTAGE</span></a>
+          <div class="product-info"><span class="product-category">VINTAGE</span><h3>Fashion Vintage</h3><p>Sentuhan klasik dengan karakter yang kuat.</p><div class="product-bottom"><strong>Rp 200,000-5,000,000</strong><a href="#detail-vintage">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+        </article>
+
+        <article class="product-card jewelry">
+          <a class="product-photo" href="#detail-jewelry"><img src="gelang.jpg" alt="Koleksi jewelry"><span>04 / JEWELRY</span></a>
+          <div class="product-info"><span class="product-category">JEWELRY</span><h3>Jewelry Collection</h3><p>Detail pelengkap untuk membuat tampilan lebih personal.</p><div class="product-bottom"><strong>Rp 1,000,000/gr</strong><a href="#detail-jewelry">Lihat detail <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="details-area" aria-label="Detail koleksi">
+    <article id="detail-formal" class="detail-panel"><a href="#daftar" class="detail-close" aria-label="Tutup detail">&times;</a><img src="fashion formal.jpg" alt="Fashion formal"><div><span class="eyebrow">DETAIL KOLEKSI</span><h2>Fashion Formal</h2><p>Temukan pilihan fashion formal untuk melengkapi penampilan di momen spesial.</p><strong>Rp 200,000-1,000,000</strong></div></article>
+    <article id="detail-casual" class="detail-panel"><a href="#daftar" class="detail-close" aria-label="Tutup detail">&times;</a><img src="fashion casual.jpg" alt="Fashion casual"><div><span class="eyebrow">DETAIL KOLEKSI</span><h2>Fashion Casual</h2><p>Pilihan gaya casual yang santai dan mudah dipadukan untuk aktivitas sehari-hari.</p><strong>Rp 200,000-3,000,000</strong></div></article>
+    <article id="detail-vintage" class="detail-panel"><a href="#daftar" class="detail-close" aria-label="Tutup detail">&times;</a><img src="fashion vintage.jpg" alt="Fashion vintage"><div><span class="eyebrow">DETAIL KOLEKSI</span><h2>Fashion Vintage</h2><p>Koleksi bernuansa vintage untuk kamu yang menyukai sentuhan klasik.</p><strong>Rp 200,000-5,000,000</strong></div></article>
+    <article id="detail-jewelry" class="detail-panel"><a href="#daftar" class="detail-close" aria-label="Tutup detail">&times;</a><img src="gelang.jpg" alt="Jewelry"><div><span class="eyebrow">DETAIL KOLEKSI</span><h2>Jewelry Collection</h2><p>Pelengkap gaya dengan detail yang memberi sentuhan berbeda.</p><strong>Rp 1,000,000/gr</strong></div></article>
+  </section>
+
+  <section id="kontak" class="contact-section section-pad">
+    <div class="section-heading">
+      <span class="eyebrow">LET'S CONNECT</span>
+      <h2>Temukan Kami</h2>
+      <p>Tertarik dengan koleksi Fee Fly Company? Hubungi kami melalui platform berikut.</p>
+    </div>
+    <div class="contact-links">
+      <a class="contact-link whatsapp" href="https://wa.me/6281234567890?text=Halo%20Fee%20Fly%20Company,%20saya%20ingin%20bertanya" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i><span><small>CHAT WITH US</small>WhatsApp</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a class="contact-link instagram" href="https://www.instagram.com/fee_fly_company/?psln=NmV5dGVqM3Nzb2hr" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span><small>FOLLOW OUR PAGE</small>Instagram</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+      <a class="contact-link shopee" href="https://shopee.co.id/universal-link/now-food/shop/22589956?deep_and_deferred=1&shareChannel=whatsapp" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-bag-shopping"></i><span><small>ORDER ONLINE</small>ShopeeFood</span><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    </div>
+  </section>
+
+  <section id="lokasi" class="location-section section-pad">
+    <div class="section-heading">
+      <span class="eyebrow">FIND US</span><h2>Lokasi Kami</h2>
+      <p>Kunjungi lokasi kami. Kami tunggu kedatangan Anda!</p>
+    </div>
+    <div class="location-grid">
+      <div class="map-frame"><iframe src="https://maps.google.com/maps?q=-7.315831,109.248195&z=17&output=embed" title="Peta lokasi Fee Fly Company" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="location-card"><span class="location-pin"><i class="fa-solid fa-location-dot"></i></span><span class="eyebrow">FEE FLY COMPANY</span><h3>Purwokerto, Jawa Tengah</h3><p>Jl. Raya Limpakuwus RT 03/ RW 01, Kec. Sumbang, Kabupaten Banyumas, Jawa Tengah 53183.</p><a class="primary-button" href="https://www.google.com/maps/dir/?api=1&destination=-7.315831%2C109.248195" target="_blank" rel="noopener noreferrer">Petunjuk Arah <i class="fa-solid fa-arrow-right"></i></a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <a href="#beranda" class="footer-brand">FEE FLY <span>COMPANY</span></a>
+  <p>Style that speaks for you.</p>
+  <div class="footer-bottom">© 2026 Fee Fly Company. All Rights Reserved.</div>
+</footer>
+</body>
+</html>
